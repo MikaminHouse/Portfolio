@@ -1,0 +1,296 @@
+body{
+    user-select: none; /*テキスト選択を無効にする*/
+}
+#button1,#button2,#button3,#button4{
+    box-shadow: 0 5px 0 rgb(60, 60, 60);
+    transition: all 0.2s;
+
+}
+#button1:active,#button2:active,#button3:active,#button4:active{
+    box-shadow: none;
+    transform: translateY(5px);
+    background-color: rgb(60, 60, 60);
+}
+
+/* 入力画面　ここから↓ */
+
+#table{
+    width: 300px;
+    height: 250px;
+    margin: 250px auto 0;
+    border: 10px ridge gray;
+}
+#table1{
+    width: 220px;
+    height: 30px;
+    margin: 20px auto 5px auto;
+    padding: 10px 5px 0 5px;
+    border: 5px ridge silver;
+}
+#label1{
+    margin: 0 0 0 5px;
+
+}
+input[id="textbox1"]{
+    width: 120px;
+    float: right;
+}
+#table2{
+    width: 220px;
+    height: 30px;
+    margin: 0 auto 5px auto;
+    padding: 10px 5px 0 5px;
+    border: 5px ridge silver;
+}
+#label2{
+    margin: 0 0 0 5px;
+}
+input[id="textbox2"]{
+    width: 120px;
+    float: right;
+}
+#button1{
+    position: absolute;
+    top: 400px;
+    left: 715px;
+    font-size: 20px;
+    width: 100px;
+    background-color: silver;
+    margin: auto;
+    text-align:  center;
+}
+#table3{
+    width: 250px;
+    height: 30px;
+    margin: 60px auto 5px auto;
+    padding: 10px 5px 0 5px;
+    border: 5px ridge silver;
+}
+#label3{
+    margin: 0 0 0 5px;
+}
+input[id="textbox3"]{
+    width: 120px;
+    float: right;
+}
+/* 入力画面　ここまで↑ */
+
+/* 割り振る画面　ここから↓ */
+
+#text{
+    width: 300px;
+    height: 250px;
+    margin: 250px auto 0;
+    border: 10px ridge gray;
+    display: none;
+}
+#mode{
+    width: 100%;
+    height: 50px;
+    margin: 10px auto;
+    font-size: 20px;
+    text-align: center;
+}
+
+#text #h2{
+    width: 100%;
+    text-align: center;
+    display: none;
+}
+
+
+#text .p{
+    width: 100%;
+    text-align: left;
+    font-weight: bold;
+    font-size: 20px;
+    margin: 10px 0 0 50px;
+}
+
+#text #target{
+    text-align: center;
+    display: none;
+}
+
+#button2{
+    position: absolute;
+    top: 400px;
+    left: 710px;
+    font-size: 20px;
+    width: 100px;
+    background-color: silver;
+    margin: auto;
+    text-align:  center;
+}
+
+/* 割り振る画面　ここまで↑ */
+
+/* テーブル表示画面　ここから↓ */
+
+#number{
+    width: 300px;
+    height: 250px;
+    margin: 250px auto 0;
+    border: 10px ridge gray;
+    display: none;
+}
+#number p{
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+}
+#number p #span{
+    font-size: 40px;
+}
+#button3{
+    position: absolute;
+    top: 400px;
+    left: 710px;
+    font-size: 20px;
+    width: 100px;
+    background-color: silver;
+    margin: auto;
+    text-align:  center;
+}
+
+/* テーブル表示画面　ここまで↑ */
+
+/* 終了画面　ここから↓ */
+
+#finish{
+    width: 300px;
+    height: 250px;
+    margin: 250px auto 0;
+    border: 10px ridge gray;
+    display: none;
+}
+#finish p{
+    width: 100%;
+    padding: 30px 0 0 0;
+    text-align: center;
+    font-weight: bold;
+
+}
+#button4{
+    position: absolute;
+    top: 400px;
+    left: 710px;
+    font-size: 20px;
+    width: 100px;
+    background-color: silver;
+    margin: auto;
+    text-align:  center;
+}
+
+/* 終了画面　ここまで↑ */
+
+/* 表を表示する画面　ここから↓ */
+
+#main_table{
+    width: 100%;
+    height: 100%;
+    margin: 20px auto 0;
+    display: none;
+    text-align: center;
+}
+table{
+    margin: auto;
+    border-collapse: collapse;
+}
+th{
+    position: sticky;
+    top: 0;
+    background-color: silver;
+    font-weight: bold;
+}
+th,td{
+    text-align: center;
+    border: 2px solid black;
+    padding: 10px;
+}
+.td_ON{
+    color: blue;
+}
+
+#sub_div{
+    width: 200px;
+    display: flex;
+    margin: 0 auto 20px;
+}
+
+#button5{
+    font-size: 20px;
+    width: 100px;
+    background-color: silver;
+    box-shadow: 0 5px 0 rgb(60, 60, 60);
+    text-align:  center;
+    border-radius: 50px;
+    transition: all 0.5s;
+    margin: 0 5px;
+}
+#button5:active{
+    box-shadow: none;
+    transform: translateY(5px);
+    background-color: rgb(60, 60, 60);
+
+}
+#button6{
+    font-size: 20px;
+    width: 100px;
+    background-color: silver;
+    box-shadow: 0 5px 0 rgb(60, 60, 60);
+    text-align:  center;
+    border-radius: 50px;
+    transition: all 0.5s;
+    margin: 0 5px;
+}
+#button6:active{
+    box-shadow: none;
+    transform: translateY(5px);
+    background-color: rgb(60, 60, 60);
+
+}
+input[id="textbox4"]{
+    position: absolute;
+    top: -55px;
+    right: 400px;
+    opacity: 0;
+    width: 200px;
+    height: 40px;
+    border: 10px ridge silver;
+    transition: top 1s,opacity 2s;
+}
+input[class="ON"]{
+    position: absolute;
+    top: 5px;
+    opacity: 1;
+}
+
+#button7{
+    position: absolute;
+    top: -50px;
+    right: 280px;
+    font-size: 20px;
+    width: 100px;
+    background-color: silver;
+    box-shadow: 0 5px 0 rgb(60, 60, 60);
+    text-align:  center;
+    border-radius: 50px;
+    transition: all 0.2s;
+    margin: 0 5px;
+    opacity: 0;
+    transition: top 1s,opacity 2s;
+}
+#button7:active{
+    box-shadow: none;
+    transform: translateY(5px);
+    background-color: rgb(60, 60, 60);
+
+}
+#button7.ON{
+    position: absolute;
+    top: 20px;
+    opacity: 1;
+}
+
+/* 表を表示する画面　ここまで↑ */
