@@ -1,0 +1,53 @@
+#index_body{
+    text-align: center;
+}
+#index_body input[type = "submit"]{
+    width: 150px;
+    margin: 0 20px;
+}
+
+#login_body{
+    text-align: center;
+}
+#login_body input[type = "text"]{
+    width: 200px;
+    margin: 10px 20px;
+}
+#login_body input[type = "submit"]{
+    width: 150px;
+    margin: 10px 20px;
+}
+
+#top_body{
+    text-align: center;
+}
+#top_body form[id = "logout_form"]{
+    margin: 20px 0 0 0;
+}
+
+
+#gest_promise_body{
+    text-align: center;
+}
+#gest_promise_body table{
+    margin: auto;
+    border-collapse: collapse;
+}
+#gest_promise_body table tr{
+    width: 100%;
+
+}
+#gest_promise_body table th{
+    border-style: solid;
+    border-width: 2px;
+    border-color: black;
+}
+#gest_promise_body table td{
+    border-style: none solid solid;
+    border-width: 2px;
+    border-color: black;
+}
+
+#gest_promise_body input{
+    margin: 10px 0;
+}
