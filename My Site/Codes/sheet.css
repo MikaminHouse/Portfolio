@@ -1,0 +1,43 @@
+body{
+	background-color:black;
+}
+header{
+	text-align:center;
+}
+h2{
+	width:500px;
+	color:white;
+	margin:auto;
+	text-align:center;
+	border-right:5px solid red;
+	border-left:5px solid red;
+
+}
+ul,li{
+	color:red;
+}
+ul{
+	margin-right:400px;
+}
+li{
+	margin-bottom:40px;
+}
+li a{
+	color:white;
+	text-decoration: none;
+}
+li a:hover{
+	color:red;
+}
+
+#take_ul{
+	margin-left:300px;
+	width:800px;
+}
+.take_title{
+	margin-top:50px;
+	color:white;
+	border-top:3px solid red;
+}
+
+
