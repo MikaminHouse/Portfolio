@@ -1,79 +1,83 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <link href="style.css" rel="stylesheet">
-        <script src="script.js"></script>
 
-        <title>グループ分けアプリ</title>
-    </head>
-    <body oncontextmenu="return false;">
-        <div id="table">
-            <div id="table1">
-                <label id="label1">テーブル数</label>
-                <input type="text" id="textbox1" placeholder="テーブル数を入力">
-            </div>
-            <div id="table2">
-                <label id="label2">グループ数</label>
-                <input type="text" id="textbox2" placeholder="グループ数を入力">
-            </div>
+<head>
+    <link href="style.css" rel="stylesheet">
+    <script src="script.js"></script>
 
-            <div id="button1" onclick="next(1)">設定</div>
+    <title>グループ分けアプリ</title>
+</head>
 
-            <div id="table3">
-                <label id="label3">コース名</label>
-                <select id="textbox3">
-                    <option>スペシャリストコース</option>
-                    <option>エンジニアコース</option>
-                    <option></option>
-                </select>
-            </div>
-
+<body oncontextmenu="return false;">
+    <div id="table">
+        <div id="table1">
+            <label id="label1">テーブル数</label>
+            <input type="text" id="textbox1" placeholder="テーブル数を入力">
+        </div>
+        <div id="table2">
+            <label id="label2">グループ数</label>
+            <input type="text" id="textbox2" placeholder="グループ数を入力">
         </div>
 
-        <div id="text">
-            <h2 id="h2">ランダムに割り振る</h2>
-            <select name="mode" id="mode" onclick="mode()">
+        <div id="button1" onclick="next(1)">設定</div>
+
+        <div id="table3">
+            <label id="label3">コース名</label>
+            <select id="textbox3">
+                <option>スペシャリストコース</option>
+                <option>エンジニアコース</option>
                 <option></option>
-                <option>ランダムに席を割り振る</option>
-                <option>順番に席を割り振る（横）</option>
-                <option>順番に席を割り振る（縦）</option>
-        
             </select>
-            <!--
+        </div>
+
+    </div>
+
+    <div id="text">
+        <h2 id="h2">ランダムに割り振る</h2>
+        <select name="mode" id="mode" onclick="mode()">
+            <option></option>
+            <option>ランダムに席を割り振る</option>
+            <option>ランダムに席を割り振る（自動）</option>
+            <option>順番に席を割り振る（横）</option>
+            <option>順番に席を割り振る（縦）</option>
+
+        </select>
+        <!--
             <p class="p"><span id="mode1" onclick="mode(1)">○</span>ランダムに割り振る</p>
             <p class="p"><span id="mode2" onclick="mode(2)">○</span>順番に割り振る</p>
             -->
 
-            <h2 id="target">対象：</h2>
-            
-            
-            <div id="button2" onclick="next(2)">スタート</div>
+        <h2 id="target">対象：</h2>
+
+
+        <div id="button2" onclick="next(2)">スタート</div>
+    </div>
+
+    <div id="number">
+        <p>
+            <span id="name">あなたは</span><br>
+            <span id="span"> </span>
+            <br>のテーブルです
+        </p>
+        <div id="button3" onclick="next(3)">設定</div>
+    </div>
+
+    <div id="finish">
+        <p>すべての席が決定しました</p>
+        <div id="button4" onclick="next(4)">設定</div>
+    </div>
+
+    <div id="main_table">
+        <div id="sub_div">
+            <div id="button5" onclick="next(5)">完了</div>
+            <div id="button6" onclick="search()">検索</div>
         </div>
-
-        <div id="number">
-            <p>
-                <span id="name">あなたは</span><br>
-                <span id="span"> </span>
-                <br>のテーブルです
-            </p>
-            <div id="button3" onclick="next(3)">設定</div>
-        </div>
-
-        <div id="finish">
-            <p>すべての席が決定しました</p>
-            <div id="button4" onclick="next(4)">設定</div>
-        </div>
-
-        <div id="main_table">
-            <div id="sub_div">
-                <div id="button5" onclick="next(5)">完了</div>
-                <div id="button6" onclick="search()">検索</div>
-            </div>
-            <input type="text" id="textbox4" placeholder="生徒番号を入力">
-            <div id="button7" onclick="search_add()">固定</div>
+        <input type="text" id="textbox4" placeholder="生徒番号を入力">
+        <div id="button7" onclick="search_add()">固定</div>
 
 
-        </div> <!--ここに表を挿入する-->
+    </div> <!--ここに表を挿入する-->
 
-    </body>
+</body>
+
 </html>
